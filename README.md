@@ -20,4 +20,4 @@ SPEED CHANGE - an effect that changes the character's speed, speeding up gamepla
 
 EFFECTS RESET - resets all applied effects, allowing you to breathe a sigh of relief and relax for the next 10 seconds.
 
-CHAOS MODE is the most challenging gameplay effect that completely inverts character controls.
+CHAOS MODE - the most challenging gameplay effect that completely inverts character controls, so its effect lasts less than that of other effects.
