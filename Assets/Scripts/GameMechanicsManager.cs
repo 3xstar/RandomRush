@@ -91,14 +91,14 @@ public class GameMechanicsManager : MonoBehaviour
             case 0:
                 float newGravity = Random.Range(-10f, -30f);
                 Physics.gravity = new Vector3(0, newGravity, 0);
-                notificationMessage = "ИЗМЕНЕНИЕ ГРАВИТАЦИИ";
+                notificationMessage = "GRAVITY CHANGE";
                 notificationColor = gravityColor;
                 break;
                 
             case 1:
                 float randomSize = Random.Range(0.5f, 3f);
                 playerController.transform.localScale = Vector3.one * randomSize;
-                notificationMessage = "ИЗМЕНЕНИЕ РАЗМЕРА";
+                notificationMessage = "SIZE CHANGE";
                 notificationColor = sizeColor;
                 break;
                                 
@@ -113,13 +113,13 @@ public class GameMechanicsManager : MonoBehaviour
             case 3:
                 float newSpeed = Random.Range(15f, 20f);
                 playerController.forwardSpeed = newSpeed;
-                notificationMessage = "ИЗМЕНЕНИЕ СКОРОСТИ";
+                notificationMessage = "SPEED CHANGE";
                 notificationColor = speedColor;
                 break;
                 
             case 4:
                 ResetToDefault();
-                notificationMessage = "СБРОС ЭФФЕКТОВ";
+                notificationMessage = "EFFECTS RESET";
                 notificationColor = resetColor;
                 break;
         }
@@ -160,7 +160,7 @@ public class GameMechanicsManager : MonoBehaviour
         }
 
         // Всегда показываем уведомление при изменении состояния хаоса
-        string message = chaosMode ? "РЕЖИМ ХАОСА!" : "РЕЖИМ ХАОСА ОТКЛЮЧЕН";
+        string message = chaosMode ? "CHAOS MODE" : "CHAOS MODE IS OFF";
         Color color = chaosMode ? chaosColor : resetColor;
         ShowMechanicNotification(message, color);
 
